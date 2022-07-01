@@ -17,3 +17,4 @@ Filename | Description
 1-compiler | Compiles a C file to an object file with the object file name same as the C input file name but with a .o extension instaed of .c
 2-assembler | Generates the assembly code of a C code and save it to an output file with same name as the C filename by with a .s extension instead
 3-name | Compiles and creates an executable file with the name cisfun simultaneously
+4-puts.c | A simple C code that prints text to the stdout with 'puts' function
