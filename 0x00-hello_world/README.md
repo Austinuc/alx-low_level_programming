@@ -18,3 +18,4 @@ Filename | Description
 2-assembler | Generates the assembly code of a C code and save it to an output file with same name as the C filename by with a .s extension instead
 3-name | Compiles and creates an executable file with the name cisfun simultaneously
 4-puts.c | A simple C code that prints text to the stdout with 'puts' function
+5-printf.c | Using the printf function to print text to the stdout
