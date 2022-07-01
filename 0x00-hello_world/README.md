@@ -21,3 +21,4 @@ Filename | Description
 5-printf.c | Using the printf function to print text to the stdout
 6-size.c | Printing the size of various data types in C dependent on the machine its beign compiled and run on
 100-intel | Generates assembly code from C using 'Intel syntax'
+101-quote.c | Prints to the standard error in C
