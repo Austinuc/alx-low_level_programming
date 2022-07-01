@@ -20,3 +20,4 @@ Filename | Description
 4-puts.c | A simple C code that prints text to the stdout with 'puts' function
 5-printf.c | Using the printf function to print text to the stdout
 6-size.c | Printing the size of various data types in C dependent on the machine its beign compiled and run on
+100-intel | Generates assembly code from C using 'Intel syntax'
