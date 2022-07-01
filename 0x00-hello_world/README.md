@@ -14,3 +14,4 @@ All of the following files are scripts and programs written in C:
 Filename | Description
 --- | ---
 0-preprocessor | Runs a C file through the preprocessor and saves the result into another file
+1-compiler | Compiles a C file to an object file with the object file name same as the C input file name but with a .o extension instaed of .c
