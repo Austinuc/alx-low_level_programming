@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * puts - prints text to the stdout followed by a new line
+ * main - prints text to the stdout followed by a new line
  *
+ * Return: returns 0 for successful execution
  */
 
-int main()
+int main(void)
 {
-	puts("Programming is like building a multilingual puzzle");
-	return 0;
+	puts("Programming is like building a multilingual puzzle\n");
+	return (0);
 }
