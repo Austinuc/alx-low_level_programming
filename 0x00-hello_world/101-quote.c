@@ -2,10 +2,11 @@
 /**
  * main - Entry point
  *
- * return: 1 Error
+ * return: returns 1 upon completion.
  */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar,\
+			2015-10-19\n");
 	return (1);
 }
