@@ -18,3 +18,4 @@ Filename | Description
 2-print_alphabet.c | Prints all the alpabets in lowercase
 3-print_alphabets.c | Prints alphabets in lowercase and then in uppercase
 4-print_alphabt.c | Prints all the alphabets in lowercase except q and e
+5-print_numbers.c | Prints all single digit numbers of base 10
