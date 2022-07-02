@@ -14,12 +14,14 @@ int main(void)
 		for (second = first + 1; second <= 56; second++)
 		{
 			for (third = second + 1; third <= 57; third++)
+			{
 				putchar(first);
 				putchar(second);
 				putchar(third);
 				if (!(first == 55 && second == 56 && third == 57))
 					putchar(',');
 					putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
