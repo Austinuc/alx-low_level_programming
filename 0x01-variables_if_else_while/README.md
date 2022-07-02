@@ -24,3 +24,4 @@ Filename | Description
 8-print_base16.c | Prints all numbers of base 16 in lowercase
 9-print_comb.c | Prints all possible combinations of single-digit numbers
 100-print_comb3.c | Prints all possible combinations of two single digits without repetition
+101-print_comb4.c | Prints all possible combinations of three different single digits
