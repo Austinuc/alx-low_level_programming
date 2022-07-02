@@ -25,3 +25,4 @@ Filename | Description
 9-print_comb.c | Prints all possible combinations of single-digit numbers
 100-print_comb3.c | Prints all possible combinations of two single digits without repetition
 101-print_comb4.c | Prints all possible combinations of three different single digits
+102-print_comb5.c | Prints all possible combination of two two-digit numbers
