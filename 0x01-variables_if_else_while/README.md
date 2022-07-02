@@ -20,3 +20,4 @@ Filename | Description
 4-print_alphabt.c | Prints all the alphabets in lowercase except q and e
 5-print_numbers.c | Prints all single digit numbers of base 10
 6-print_numberz.c | Prints all single digit number of base 10 using putchar function
+7-print_tebahpla.c | Prints lowercase alphabets inreverse order
