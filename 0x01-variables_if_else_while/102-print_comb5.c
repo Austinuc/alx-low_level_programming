@@ -18,8 +18,7 @@ int main(void)
 			{
 				for (fourth = second; fourth <= 57; fourth++)
 				{
-					if (((first == second && second == third)
-						&& (third == fourth)))
+					if (first == third && second == fourth)
 					{
 						continue;
 					}
