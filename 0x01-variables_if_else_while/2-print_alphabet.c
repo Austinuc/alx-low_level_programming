@@ -7,8 +7,10 @@
 int main(void)
 {
 	char letter = 97;
+
 	while (letter <= 122)
 	{
 		putchar(letter);
 	}
+	return (0);
 }
