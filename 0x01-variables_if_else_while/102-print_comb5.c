@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (third = first; third <= 57; third++)
 			{
-				for (fourth = second + 1; fourth <= 57; fourth++)
+				for (fourth = 48; fourth <= 57; fourth++)
 				{
 					putchar(first);
 					putchar(second);
