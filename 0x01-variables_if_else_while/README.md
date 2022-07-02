@@ -15,3 +15,4 @@ Filename | Description
 --- | ---
 0-positive_or_negative.c | Checks for positive or negative values of randomly generated int numbers
 1-last_digit.c | Finds the last digit of a given random number
+2-print_alphabet.c | Prints all the alpabets in lowercase
