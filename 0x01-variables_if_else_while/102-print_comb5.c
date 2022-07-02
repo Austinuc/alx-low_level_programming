@@ -18,6 +18,11 @@ int main(void)
 			{
 				for (fourth = 48; fourth <= 57; fourth++)
 				{
+					if (((first == second && second == third)
+						&& (third == fourth)))
+					{
+						continue;
+					}
 					putchar(first);
 					putchar(second);
 					putchar(' ');
