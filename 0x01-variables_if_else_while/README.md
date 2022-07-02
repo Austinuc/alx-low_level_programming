@@ -17,3 +17,4 @@ Filename | Description
 1-last_digit.c | Finds the last digit of a given random number
 2-print_alphabet.c | Prints all the alpabets in lowercase
 3-print_alphabets.c | Prints alphabets in lowercase and then in uppercase
+4-print_alphabt.c | Prints all the alphabets in lowercase except q and e
