@@ -21,3 +21,4 @@ Filename | Description
 5-print_numbers.c | Prints all single digit numbers of base 10
 6-print_numberz.c | Prints all single digit number of base 10 using putchar function
 7-print_tebahpla.c | Prints lowercase alphabets inreverse order
+8-print_base16.c | Prints all numbers of base 16 in lowercase
