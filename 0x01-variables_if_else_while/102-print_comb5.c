@@ -18,10 +18,6 @@ int main(void)
 			{
 				for (fourth = second + 1; fourth <= 57; fourth++)
 				{
-					if (third == fourth) /* skip for equal digits */
-					{
-						continue;
-					}
 					putchar(first);
 					putchar(second);
 					putchar(' ');
