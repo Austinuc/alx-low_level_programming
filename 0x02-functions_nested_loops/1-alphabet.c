@@ -1,7 +1,6 @@
 #include "main.h"
 /**
   * print_alphabet - Prints the alphabets in lowercase
-  * @str: string variable
   *
   * Return: 0 for success
   */
