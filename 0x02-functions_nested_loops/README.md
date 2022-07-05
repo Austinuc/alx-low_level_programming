@@ -24,3 +24,4 @@ Filename | Description
 9-times_table.c | Print 9 times table
 10-add.c | Returns the sum of two integers
 11-print_to_98.c | Prints all natural numbers from n to 98
+100-times_table.c | Prints the n times table, starting with zero

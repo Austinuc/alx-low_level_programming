@@ -49,4 +49,7 @@ int add(int, int);
 void print_to_98(int n);
 /* Prints all natural numbers from n to 98 */
 
+void print_times_table(int n);
+/* Prints the n times table, starting with zero */
+
 #endif
