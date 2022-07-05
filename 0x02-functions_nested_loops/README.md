@@ -19,3 +19,4 @@ Filename | Description
 5-sign.c | Prints the sign of a number and returns 1 if num>0, or 0 if num=0 or -1 if num<0
 6-abs.c | Returns the absolute value of a given number
 7-print_last_digit.c | Returns the last digit of a given number
+8-24_hours.c | Prints every minute of the day starting from 00:00 to 23:59
