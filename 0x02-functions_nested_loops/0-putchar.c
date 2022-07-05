@@ -1,19 +1,12 @@
-#include <stdio.h>
+#include "main.h"
+#include <unistd.h>
 /**
   * main - Prints _putchar and new line
-  * Return: Always 0 (Success)
+  * @c: Character input
+  *
+  * Return: On success 1
   */
-int main(void)
+int _putchar(char c)
 {
-	char strArray[] = {"_putchar"}; /* Array string */
-	int i = 0; /* initialize to loop through the array */
-
-	while (strArray[i] != 0)
-	{
-		putchar(strArray[i]);
-		i++;
-	}
-	putchar('\n');
-
-	return (0);
+	return (write(1, &c, 1));
 }
