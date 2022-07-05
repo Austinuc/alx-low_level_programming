@@ -40,4 +40,7 @@ int print_last_digit(int);
 void jack_bauer(void);
 /* Prints every minute of the day, starting from 00:00 23:59 */
 
+void times_table(void);
+/* Print 9 times table */
+
 #endif
