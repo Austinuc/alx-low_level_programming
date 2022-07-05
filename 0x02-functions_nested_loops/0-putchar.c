@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
-  * main - Prints _putchar and new line
+  * _putchar - Prints _putchar and new line
   * @c: Character input
   *
   * Return: On success 1
