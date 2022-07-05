@@ -31,4 +31,7 @@ int print_sign(int n);
  * Return: -1 and prints - if n < zero
  */
 
+int _abs(int);
+/* Returns the absolute value of a given int */
+
 #endif
