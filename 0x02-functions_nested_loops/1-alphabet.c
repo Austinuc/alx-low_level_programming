@@ -4,7 +4,7 @@
   *
   * Return: 0 for success
   */
-int main(void)
+void print_alphabet(void)
 {
 	int str = 97;
 	while (str <= 122)
@@ -13,6 +13,4 @@ int main(void)
 		str++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
