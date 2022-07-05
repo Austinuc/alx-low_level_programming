@@ -23,3 +23,4 @@ Filename | Description
 8-24_hours.c | Prints every minute of the day starting from 00:00 to 23:59
 9-times_table.c | Print 9 times table
 10-add.c | Returns the sum of two integers
+11-print_to_98.c | Prints all natural numbers from n to 98
