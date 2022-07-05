@@ -14,7 +14,7 @@ void print_times_table(int n)
 		for (row = 0; row <= n; row++) /* loop: ix , ix, ... */
 		{
 			_putchar(48);
-			for (column = 1; column <= n; column++) /* get the row: ix1, ix2, ..., ixn */
+			for (column = 1; column <= n; column++) /* get the row:*/
 			{
 				product = row * column; /* multiplication table vals */
 				_putchar(',');
