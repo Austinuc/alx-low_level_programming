@@ -13,6 +13,15 @@ void print_alphabet_x10(void);
 /* Prints 10 times all the alphabets in lowercase */
 
 int _islower(int c);
-/* Checks for lowercase characters */
+/* Checks for lowercase characters and returns
+ * 1: if true
+ * 0: otherwise
+ */
+
+int _isalpha(int c);
+/* Checks for alphabetic character and returns
+ * 1: is a letter, lower or uppercase
+ * 0: otherwise
+ */
 
 #endif
