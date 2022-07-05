@@ -1,4 +1,3 @@
-#include "main.h"
 #include <unistd.h>
 /**
   * _putchar - Prints _putchar and new line
