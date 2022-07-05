@@ -1,11 +1,19 @@
-#include <unistd.h>
+#include "main.h"
 /**
-  * _putchar - Prints _putchar and new line
-  * @c: Character input
+  * main - Prints _putchar and new line
   *
   * Return: On success 1
   */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	char str[] = {"_putchar"};
+	int i = 0;
+
+	while (str[i] != 0)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+
+	return (0);
 }
