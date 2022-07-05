@@ -16,3 +16,4 @@ Filename | Description
 1-alphabet.c | Prints all the alphabets in lowercase
 2-print_alphabet_x10.c | Prints 10 times all the alphabets in lowercase
 4-isalpha.c | CHecks for alphabetic character and returns 1 if true or 0 otherwise
+5-sign.c | Prints the sign of a number and returns 1 if num>0, or 0 if num=0 or -1 if num<0

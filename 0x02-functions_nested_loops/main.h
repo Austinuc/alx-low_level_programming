@@ -24,4 +24,11 @@ int _isalpha(int c);
  * 0: otherwise
  */
 
+int print_sign(int n);
+/* Prints the sign of a number,
+ * Returns: 1 and prints + if n > zero
+ * Return: 0 and prints 0 if n = zero
+ * Return: -1 and prints - if n < zero
+ */
+
 #endif
