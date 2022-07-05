@@ -13,3 +13,5 @@ The following files are programs written in C
 Filename | Description
 --- | ---
 0-putchar.c | Prints _putchar followed by a new line
+1-alphabet.c | Prints all the alphabets in lowercase
+2-print_alphabet_x10.c | Prints 10 times all the alphabets in lowercase

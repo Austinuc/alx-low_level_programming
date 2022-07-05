@@ -9,4 +9,7 @@ int _putchar(char);
 void print_alphabet(void);
 /* Prints alphabets in lower case */
 
+void print_alphabet_x10(void);
+/* Prints 10 times all the alphabets in lowercase */
+
 #endif
