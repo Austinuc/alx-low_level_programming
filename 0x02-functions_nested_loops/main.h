@@ -34,7 +34,7 @@ int print_sign(int n);
 int _abs(int);
 /* Returns the absolute value of a given int */
 
-int print_last_digit(int);
+long print_last_digit(long);
 /* Prints the last digits of a given number */
 
 void jack_bauer(void);
