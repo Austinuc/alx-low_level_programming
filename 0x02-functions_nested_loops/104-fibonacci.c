@@ -16,7 +16,7 @@ int main(void)
 		next = a + b;
 		a = b;
 		b = next;
-		printf(", %ld");
+		printf(", %ld", b);
 	}
 	printf("\n");
 
