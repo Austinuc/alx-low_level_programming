@@ -8,15 +8,21 @@
   */
 int main(void)
 {
-	int i = 1;
-	int j = 2;
+	int i = 0;
+	int j = 1;
 	int count;
 	int next;
 
-	for (count = 2; count <= 50; count++)
+	for (count = 0; count < 50; count++)
 	{
 		next = i + j;
-		printf("%d, ", next);
+		printf("%d", next);
+
+		if (j != 49)
+		{
+			printf(", ");
+		}
+
 		i = j;
 		j = next;
 	}
