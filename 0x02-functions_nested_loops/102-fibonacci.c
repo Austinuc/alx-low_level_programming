@@ -16,9 +16,9 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		next = i + j;
-		printf("%d", next);
+		printf("%ld", next);
 
-		if (j != 49)
+		if (count != 49)
 		{
 			printf(", ");
 		}
