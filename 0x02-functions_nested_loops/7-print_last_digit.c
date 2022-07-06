@@ -5,7 +5,7 @@
   *
   * Return: Last digit of the given n
   */
-int print_last_digit(long n)
+long print_last_digit(long n)
 {
 	if (n < 0)
 	{
