@@ -5,19 +5,19 @@
   */
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	long next;
-	long count, overflow;
-	long a_head, a_tail, b_head, b_tail, next_head, next_tail;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long next;
+	int count, overflow;
+	unsigned long a_head, a_tail, b_head, b_tail, next_head, next_tail;
 
-	printf("%ld, %ld", a, b);
+	printf("%lu, %lu", a, b);
 	for (count = 2; count < 92; count++)
 	{
 		next = a + b;
 		a = b;
 		b = next;
-		printf(", %ld", b);
+		printf(", %lu", b);
 	}
 
 	a_head = a / 1000000000; /* break larger num into 2 parts */
@@ -31,7 +31,7 @@ int main(void)
 		next_tail = (a_tail + b_tail) - (1000000000 * overflow);
 		next_head = (a_head + b_head) + overflow;
 
-		printf(", %ld%ld", next_head, next_tail);
+		printf(", %lu%lu", next_head, next_tail);
 
 		a_head = b_head;
 		a_tail = b_tail;
