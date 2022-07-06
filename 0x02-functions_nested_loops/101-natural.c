@@ -15,7 +15,7 @@ int main(void)
 			sum += i;
 		}
 	}
-	printf("Sum of 3, 5 multiples below 1024 is: %d\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
