@@ -11,7 +11,7 @@ int main(void)
 	int i = 0;
 	int j = 1;
 	int count;
-	int next;
+	long next;
 
 	for (count = 0; count < 50; count++)
 	{
