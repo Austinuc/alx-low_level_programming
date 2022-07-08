@@ -21,3 +21,4 @@ File name | Description
 6-print_line.c | Draws a line in the terminal
 7-print_diagonal.c | Draws a diagonal line on the terminal
 8-print_square.c | Prints a square from a given input size
+9-fizz_buzz.c | Prints Fizz for multiples of 3, Buzz for multiples of 5, FizzBuzz for multiples of both 3 & 5 and the numbers otherwise starting from 1 to 100
