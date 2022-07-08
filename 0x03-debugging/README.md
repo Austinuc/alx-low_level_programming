@@ -13,3 +13,4 @@ The following files are scripts and programs for C debugging project
 File name | Description
  --- | ---
  0-main.c, main.h | Tests code with multiple main files
+ 1-main.c | Comments out the code causing an infinite loop
