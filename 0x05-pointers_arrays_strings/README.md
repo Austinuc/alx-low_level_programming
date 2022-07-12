@@ -15,3 +15,4 @@ File name | Description
  0-reset_to_98.c | Takes a pointer to an int as a parameter and updates the value to point to 98
  1-swap.c | Swaps the values of two integers
  2-strlen.c | Returns the lenght of a string
+ 3-puts.c | Prints a given string input to stdout
