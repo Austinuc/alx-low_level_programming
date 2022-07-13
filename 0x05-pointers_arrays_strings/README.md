@@ -19,3 +19,4 @@ File name | Description
  4-print_rev.c | Prints srtings in reverse orders
  5-rev_string.c | Reverses a string
  6-puts2.c | Prints every even character of a string starting with the first
+ 7-puts_half.c | Prints second half of a string followed by a new line
