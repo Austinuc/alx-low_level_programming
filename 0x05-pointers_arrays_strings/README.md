@@ -21,3 +21,4 @@ File name | Description
  6-puts2.c | Prints every even character of a string starting with the first
  7-puts_half.c | Prints second half of a string followed by a new line
  8-print_array.c | Prints n elements of an array separated by comma
+ 9-strcpy.c | Copies string to another string
