@@ -22,3 +22,4 @@ File name | Description
  7-puts_half.c | Prints second half of a string followed by a new line
  8-print_array.c | Prints n elements of an array separated by comma
  9-strcpy.c | Copies string to another string
+ 100-atoi.c | Prints all the first occurrence of numbers in a string taking preceeding - or + signs into account
