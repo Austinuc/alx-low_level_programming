@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * _atoi - Prints first occurrence of numbers in a string, taking - and +
@@ -27,12 +28,20 @@ int _atoi(char *s)
 				if ((*s >= '0') && (*s <= '9'))
 				{
 					num += *s - 48;
-					num *= 10; /*add to last digit */
+					/* prevent overflow for u_int*/
+					if ((num / 1000000000) == 0)
+					{
+						num *= 10; /*append 0 */
+					}
+					else
+					{
+						return (num * minus_sign);
+					}
 					s++;
 				}
 				else
 				{
-					num /= 10; /*remove the trailing zero*/
+					num /= 10; /* rm last digit 0*/
 					return (num * minus_sign);
 				}
 			}
