@@ -17,3 +17,4 @@ File name | Description
  2-strlen.c | Returns the lenght of a string
  3-puts.c | Prints a given string input to stdout
  4-print_rev.c | Prints srtings in reverse orders
+ 5-rev_string.c | Reverses a string
