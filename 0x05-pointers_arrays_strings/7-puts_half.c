@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int strlen = 0;
 	char *temp = str;
 	int n;
-	
+
 	while (*str != '\0')
 	{
 		strlen++;
@@ -31,7 +31,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		n = (strlen - 1) / 2;
+		n = (strlen) / 2 + 1;
 	}
 	while (n < strlen)
 	{
