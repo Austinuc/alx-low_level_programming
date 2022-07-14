@@ -20,7 +20,7 @@ int main(void)
 	while (i < 2772)
 	{
 		c = rand() % 128;
-		if (( i + c) > 2772)
+		if ((i + c) > 2772)
 			break;
 		i += c;
 		printf("%c", c);
