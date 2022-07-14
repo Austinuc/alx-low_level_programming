@@ -15,3 +15,4 @@ File name | Description
  0-strcat.c | Concateneates two strings
  1-strncat.c | Concatenates two string using n bytes from src string
  2-strncpy.c | Copies a string to a given destination
+ 3-strcmp.c | Compares two strings and returns the difference of the ASCII value of the non-matching characers or zero if the two strings are equal
