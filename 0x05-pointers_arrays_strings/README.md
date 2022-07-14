@@ -23,3 +23,4 @@ File name | Description
  8-print_array.c | Prints n elements of an array separated by comma
  9-strcpy.c | Copies string to another string
  100-atoi.c | Prints all the first occurrence of numbers in a string taking preceeding - or + signs into account
+ 101-keygen.c | Generates random valid passwords for the program 101-crackme
