@@ -10,18 +10,22 @@
 
 int main(void)
 {
-	int i = 0;
+	int i = 0, c = 0;
 	time_t t;
 
 	/* Intitializes random number generator */
 	srand((unsigned int) time(&t));
 
 	/* Prints random numbers from 0 to 127 */
-	for (; i < 20; i++)
+	while (i < 2772)
 	{
-		printf("%c", rand() % 128);
+		c = rand() % 128;
+		if (( i + c) > 2772)
+			break;
+		i += c;
+		printf("%c", c);
 	}
-	printf("%c\n", rand() % 128);
+	printf("%c\n", (2772 - i));
 
 	return (0);
 }
