@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 	lendest = len(dest);
 	src = ptr;
 
-	for (i = 0; i <= lensrc; i++)
+	for (i = 0; i < lensrc; i++)
 	{
 		dest[lendest + i] = *src;
 		src++;
