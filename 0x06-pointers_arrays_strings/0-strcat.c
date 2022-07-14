@@ -8,13 +8,14 @@
   * Return: Pointer to dest string after concat
   */
 
-int len(char *str);
-
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, lendest;
+	int i = 0, lendest = 0;
 
-	lendest = len(dest);
+	while (*(dest + lendest) != '\0')
+	{
+		lendest++;
+	}
 
 	while (i >= 0)
 	{
@@ -25,15 +26,4 @@ char *_strcat(char *dest, char *src)
 		lendest++;
 	}
 	return (dest);
-}
-
-int len(char *str)
-{
-	int len = 0;
-
-	while (*(str + len) != '\0')
-	{
-		len++;
-	}
-	return (len);
 }
