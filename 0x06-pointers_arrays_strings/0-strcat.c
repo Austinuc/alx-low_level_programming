@@ -12,17 +12,17 @@ int len(char *str);
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, lensrc, lendest;
-	char *ptr = src;
+	int i = 0, lendest;
 
-	lensrc = len(src);
 	lendest = len(dest);
-	src = ptr;
 
-	for (i = 0; i < lensrc; i++)
+	while (i >= 0)
 	{
-		dest[lendest + i] = *src;
-		src++;
+		*(dest + lendest) = *(src + i);
+		if (*(src + i) == '\0')
+			break;
+		i++;
+		lendest++;
 	}
 	return (dest);
 }
@@ -31,10 +31,9 @@ int len(char *str)
 {
 	int len = 0;
 
-	while (*str != '\0')
+	while (*(str + len) != '\0')
 	{
 		len++;
-		str++;
 	}
 	return (len);
 }
