@@ -13,3 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
  0-strcat.c | Concateneates two strings
+ 1-strncat.c | Concatenates two string using n bytes from src string
