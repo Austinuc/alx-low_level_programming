@@ -14,3 +14,4 @@ File name | Description
  --- | ---
  0-strcat.c | Concateneates two strings
  1-strncat.c | Concatenates two string using n bytes from src string
+ 2-strncpy.c | Copies a string to a given destination
