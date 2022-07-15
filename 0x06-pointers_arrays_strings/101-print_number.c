@@ -12,28 +12,31 @@
 
 void print_number(int n)
 {
-	int div = 1000000000; /* max digits for int data type */
+	unsigned int div = 1000000000; /* max digits for int data type */
+	unsigned int m;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1; /* convert n to +ve number */
+		m = n * -1; /* convert n to +ve number */
 	}
+	else
+		m = n;
 
-	while (n / div == 0 && div >= 100)
+	while (m / div == 0 && div >= 100)
 	{
 		div /= 10;
 	}
 
 	while (div != 10)
 	{
-		_putchar((n / div) + 48); /* print 1st digit */
-		n %= div; /* set n to the fractional part */
+		_putchar((m / div) + 48); /* print 1st digit */
+		m %= div; /* set n to the fractional part */
 		div /= 10; /* reduce divisor's digit num to get next int */
 	}
 
-	if (n / div != 0)
-		_putchar((n / div) + 48);
+	if (m / div != 0)
+		_putchar((m / div) + 48);
 
-	_putchar((n % div) + 48);
+	_putchar((m % div) + 48);
 }
