@@ -17,3 +17,4 @@ File name | Description
  2-strncpy.c | Copies a string to a given destination
  3-strcmp.c | Compares two strings and returns the difference of the ASCII value of the non-matching characers or zero if the two strings are equal
  4-rev_array.c | Reverses the contents of an array of integers
+ 5-string_toupper.c | COnverts any lowercase character of a string to uppercase
