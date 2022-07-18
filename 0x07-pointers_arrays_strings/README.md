@@ -13,4 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
  0-memset.c | Fills the first n bytes of the memory area pointed to by s with the constant byte b
-
+ 1-memcpy.c | Copies 'n' bytes from memory area src to memory area dest
