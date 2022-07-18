@@ -40,13 +40,13 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	else
 		maxlen = len2;
 
-	/*accounts for '\0' & 1 xtra digit at zero index 4 last carry if any*/
+	/*accounts 4 '\0' & 1 xtra digit at zero index 4 last carry if any*/
 	if (maxlen + 1 >= size_r)
 	{
 		return (0);
 	}
 
-	/*set d null terminator for r, uses r[0]-r[maxlen] to store ans note:*/
+	/*set d null terminator for r, uses r[0]-r[maxlen] to store ans*/
 	*(r + (maxlen + 1)) = '\0';
 
 	/** start 4rm right of n1[len1 - 1] & n2[len2 - 1] */
@@ -92,12 +92,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 					temp = n2[len2 - i] + carry;
 					if (temp > 57)
 					{
-						*(r + (maxlen - i + 1)) = temp - 10;
+						*(r + (maxlen - i + 1)) =
+							temp - 10;
 						carry = 1;
 					}
 					else
 					{
-						*(r + (maxlen - i + 1)) = temp;
+						*(r + (maxlen - i + 1)) =
+							temp;
 						carry = 0;
 					}
 				}
@@ -123,12 +125,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 					temp = n1[len1 - i] + carry;
 					if (temp > 57)
 					{
-						*(r + (maxlen - i + 1)) = temp - 10;
+						*(r + (maxlen - i + 1)) =
+							temp - 10;
 						carry = 1;
 					}
 					else
 					{
-						*(r + (maxlen - i + 1)) = temp;
+						*(r + (maxlen - i + 1)) =
+							temp;
 						carry = 0;
 					}
 				}
