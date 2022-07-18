@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
   * infinite_add - Adds two numbers given as a string
@@ -9,11 +8,12 @@
   * @size_r: Size of buffer
   *
   * Description: added each number digit in the strings n1 and n2
-  * 	individually from right to left by manipulating the ASCII values to
-  * 	always give the same result as if it was an int addition.
-  * 	ASCII addition = n1[i] + (n2[i] - 48) + carry. if addition > 9,
-  * 	subtract 10 and carry 1 to next digit. if addition <= 9, value is
-  * 	same and carry is zero.
+  * individually from right to left by manipulating the ASCII values to
+  * always give the same result as if it was an int addition.
+  * ASCII addition = n1[i] + (n2[i] - 48) + carry. if addition > 9,
+  * subtract 10 and carry 1 to next digit. if addition <= 9, value is
+  * same and carry is zero.
+  *
   * Return: Pointer to buffer
   */
 
@@ -38,8 +38,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (0);
 	}
 
-	/** set d null terminator for r, uses r[0]-r[maxlen] to store ans note:
-	   * the xtra bit for last carry if any at the leftmost digits*/
+	/*set d null terminator for r, uses r[0]-r[maxlen] to store ans note:*/
+	/*the xtra bit for last carry if any at the leftmost digits*/
 	*(r + (maxlen + 1)) = '\0';
 	
 	/** start 4rm right of n1[len1 - 1] & n2[len2 - 1] */
@@ -65,7 +65,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 					*(r + (maxlen - i + 1)) = temp;
 					*(r + (maxlen - i)) = 48;
 				}
-				return (r);
+				break;
 			}
 			if (len1 == i) /* for len2 > len1 */
 			{
@@ -95,7 +95,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 					}
 				}
 				*(r + (maxlen - i)) = carry + 48;
-				return (r);
+				break;
 
 			}
 			if (len2 == i) /* for len1 > len2 */
@@ -126,7 +126,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 					}
 				}
 				*(r + (maxlen - i)) = carry + 48;
-				return (r);
+				break;
 			}
 		}
 		else
@@ -143,7 +143,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			}
 		}
 	}
-	return (r);
+	if (*r == '0')
+		return (r + 1);
+	else
+		return (r);
 }
 
 int len(char *n)
