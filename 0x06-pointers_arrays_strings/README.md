@@ -23,3 +23,4 @@ File name | Description
  100-rot13.c | Encodes a string using rot13 algorithm
  101-print_number.c | Prints an integer
  102-magic.c | Modifies an array element value with a pointer pointed to another variable
+ 103-infinite_add.c | Infinite addition function
