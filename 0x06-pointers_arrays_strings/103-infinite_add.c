@@ -21,10 +21,20 @@ int len(char *);
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int len1, len2, maxlen, i, carry = 0, temp;
+	int len1, len2, maxlen, i = 0, carry = 0, temp;
 
-	len1 = len(n1);
-	len2 = len(n2);
+	while (*(n1 + i) != '\0')
+	{
+		i++;
+	}
+	len1 = i;
+	i = 0;
+	while (*(n2 + i) != '\0')
+	{
+		i++;
+	}
+	len2 = i;
+	i = 1;
 	
 	/* get length of max string length */
 	if (len1 >= len2)
@@ -147,15 +157,4 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (r + 1);
 	else
 		return (r);
-}
-
-int len(char *n)
-{
-	int i = 0;
-	while(*n != '\0')
-	{
-		i++;
-		n++;
-	}
-	return (i);
 }
