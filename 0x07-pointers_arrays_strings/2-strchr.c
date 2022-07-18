@@ -20,5 +20,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
+	if (*(s + i) == c)
+		return (s + i); /* when s is just a character or c = NULL */
 	return ('\0');
 }
