@@ -20,3 +20,4 @@ Project Name | Description
  [0x04-more_functions_nested_loops](https://github.com/Austinuc/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops) | Goal is to understand nested loops in C language
  [0x05-pointers_arrays_strings](https://github.com/Austinuc/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings) | To understand Pointers, Arrays and Strings
  [0x06-pointers_arrays_strings]() | More on Pointers , Arrays and Strings manipulation
+ [0x07-pointers_arrays_strings]() | To understand pointer to pointer, multidimensional arrays and their implementations

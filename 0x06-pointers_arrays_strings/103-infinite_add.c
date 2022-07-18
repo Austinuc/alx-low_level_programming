@@ -13,7 +13,6 @@
  * ASCII addition = n1[i] + (n2[i] - 48) + carry. if addition > 9,
  * subtract 10 and carry 1 to next digit. if addition <= 9, value is
  * same and carry is zero.
- *
  * Return: Pointer to buffer
  */
 
