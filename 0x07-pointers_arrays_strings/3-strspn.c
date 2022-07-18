@@ -11,33 +11,24 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = '\0', i = 0, j = 0;
+	unsigned int n = 0, i = 0, j = 0;
 
-	while (*(accept + i) != '\0') /* get each xter of accept */
+	while (*(s + i) != '\0') /* get each xter of accept */
 	{
 		j = 0;
-		while (*(s + j) != '\0') /* search 4 only 1st instance in s*/
+		while (*(accept + j) != '\0') /* search 4 only 1st instance in s*/
 		{
-			if (*(accept + i) == *(s + j))
+			if (*(accept + j) == *(s + i))
 			{
-				/* do not overwrite n with lower substr len*/
-				if (n < j)
-				{
-					n = j;
-					break;
-				}
-				else
-				{
-					break;
-				}
+				n++;
+				break;
 			}
+			if (*(accept + j) != *(s + i) && *(accept + j + 1) == '\0')
+				return (n);
+
 			j++;
 		}
 		i++;
 	}
-	/* len of substr = (n + 1) */
-	if (n != '\0')
-		return (n + 1);
-	else
-		return (0);
+	return (n);
 }
