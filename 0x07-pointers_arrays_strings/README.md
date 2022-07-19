@@ -17,3 +17,4 @@ File name | Description
  2-strchr.c | Locates a character in a string and returns the a pointer to the first occurence of the character
  3-strspn.c | Gets the length of a prefix substring
  4-strpbrk.c | Searches a string for any of a set of bytes.
+ 5-strstr.c | Finds the first occurrence of a substring from a given string
