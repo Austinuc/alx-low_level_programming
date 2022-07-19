@@ -2,7 +2,7 @@
 
 /**
   * print_chessboard - Prints chessboard
-  * @a: given dimensions
+  * @a: input pointer
   *
   * Return: void
   */
@@ -22,5 +22,4 @@ void print_chessboard(char (*a)[8])
 		_putchar('\n');
 		i++;
 	}
-	return;
 }
