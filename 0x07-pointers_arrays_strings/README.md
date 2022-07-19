@@ -18,3 +18,4 @@ File name | Description
  3-strspn.c | Gets the length of a prefix substring
  4-strpbrk.c | Searches a string for any of a set of bytes.
  5-strstr.c | Finds the first occurrence of a substring from a given string
+ 7-print_chessboard.c | Prints the chessboard
