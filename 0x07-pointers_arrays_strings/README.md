@@ -16,3 +16,4 @@ File name | Description
  1-memcpy.c | Copies 'n' bytes from memory area src to memory area dest
  2-strchr.c | Locates a character in a string and returns the a pointer to the first occurence of the character
  3-strspn.c | Gets the length of a prefix substring
+ 4-strpbrk.c | Searches a string for any of a set of bytes.
