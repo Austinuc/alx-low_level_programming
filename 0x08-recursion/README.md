@@ -13,3 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
 0-puts_recursion.c | Prints a string recursively followed by a new line
+1-print_rev_recursion.c | Prints string in reverse
