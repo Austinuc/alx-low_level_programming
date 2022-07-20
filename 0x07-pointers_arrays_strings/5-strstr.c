@@ -1,35 +1,23 @@
 #include "main.h"
 
 /**
-  * _strstr - Finds the first occurrence of the substring 'needle' in the
-  * string 'haystack'.
-  * @haystack: given string to be searched
-  * @needle: given search substring
-  *
-  * Return: Pointer to the beginning of the located substring or NULL otherwise
-  */
-
-char *_strstr(char *haystack, char *needle)
+ * _strpbrk - searches a string for any of a set of bytes.
+ * @s: first string.
+ * @accept: second string.
+ * Return: a pointer to the byte in s that matches one of the
+ * bytes in accept, or NULL if no such byte is found.
+ */
+char *_strpbrk(char *s, char *accept)
 {
-	int i = 0, j = 0;
+	unsigned int i, j;
 
-	while (*(haystack + j) != '\0')
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (*(needle) == *(haystack + j))
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			haystack = (haystack + j);
-			j = 0, i = 0;
-			while (*(needle + i) != '\0')
-			{
-				if (*(haystack + i) != *(needle + i))
-				{
-					return ('\0');
-				}
-				i++;
-			}
-			return (haystack);
+			if (*(s + i) == *(accept + j))
+				return (s + i);
 		}
-		j++;
 	}
 	return ('\0');
 }
