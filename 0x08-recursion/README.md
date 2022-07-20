@@ -15,3 +15,4 @@ File name | Description
 0-puts_recursion.c | Prints a string recursively followed by a new line
 1-print_rev_recursion.c | Prints string in reverse
 2-strlen_recursion.c | Returns the length of a string
+3-factorial.c | Returns the factorial of a given number
