@@ -19,3 +19,4 @@ File name | Description
 4-pow_recursion.c | Returns the value of 'x' raised to the power of 'y'
 5-sqrt_recursion.c | Returns the natural square root of a given integer
 6-is_prime_number.c | Returns 1 if a given number is a prime number or 0 otherwise
+100-is_palindrome.c | Checks if a string is a Palindrome
