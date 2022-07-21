@@ -24,3 +24,6 @@ File name | Description
  101-print_number.c | Prints an integer
  102-magic.c | Modifies an array element value with a pointer pointed to another variable
  103-infinite_add.c | Infinite addition function
+
+## References
+ * [102-magic.c](https://www.linkedin.com/pulse/c-assembly-memory-doesnt-lie-even-changes-richard-harris/) by Rick Harris

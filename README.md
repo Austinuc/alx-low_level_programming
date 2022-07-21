@@ -22,3 +22,4 @@ Project Name | Description
  [0x06-pointers_arrays_strings]() | More on Pointers , Arrays and Strings manipulation
  [0x07-pointers_arrays_strings]() | To understand pointer to pointer, multidimensional arrays and their implementations
  [0x08-recursion]() | To understand recursion and applications
+ [0x09-static_libraries]() | Understanding static library, how to create it and how to use it
