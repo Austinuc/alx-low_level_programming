@@ -33,8 +33,9 @@ int compare(char *s1, char *s2, int len1, int len2)
 		/* char imediately b4 * != *(s1 + (len1 - 1))*/
 		if (*(s1 + (len1 - 1)) != *(s2 + (len2 - 2)))
 			return (1);
-		else /* for (*(s1 + (len1 - 1)) == *(s2 + (len2 - 2))) */
-			len2--;
+
+		/* for (*(s1 + (len1 - 1)) == *(s2 + (len2 - 2))) */
+		len2--;
 	}
 	/*comp strings frm the end if *(s2 + (len2 -1) != '*' */
 	if (*(s1 + (len1 - 1)) != *(s2 + (len2 - 1)))
