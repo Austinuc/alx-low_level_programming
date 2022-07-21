@@ -20,3 +20,4 @@ File name | Description
 5-sqrt_recursion.c | Returns the natural square root of a given integer
 6-is_prime_number.c | Returns 1 if a given number is a prime number or 0 otherwise
 100-is_palindrome.c | Checks if a string is a Palindrome
+101-wildcmp.c | Compares two strings and returns 1 if the strings can be considered identical and 0 otherwise
