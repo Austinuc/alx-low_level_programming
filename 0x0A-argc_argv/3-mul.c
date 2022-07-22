@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	char *p;
-	long a = 0, b = 0, n = 1;
+	int a = 0, b = 0, n = 1;
 	int i = 1;
 
 	if (argc != 3)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			n *= -1;
 			p++; /* go to next digit in the num string */
 		}
-		while (*p != '\0') /*convert argument string to long int */
+		while (*p != '\0') /*convert argument string to int */
 		{
 			a += *p - 48;
 			a *= 10;
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 			n *= -1;
 			p++;
 		}
-		while (*p != '\0') /* convert argument str to long int */
+		while (*p != '\0') /* convert argument str to int */
 		{
 			b += *p - 48;
 			b *= 10;
@@ -50,7 +50,6 @@ int main(int argc, char *argv[])
 		b /= 10;
 		i++;
 	}
-	printf("%ld\n", a * b * n);
+	printf("%d\n", a * b * n);
 	return (0);
-
 }
