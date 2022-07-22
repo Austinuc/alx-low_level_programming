@@ -5,11 +5,12 @@
   * @argc: argument count
   * @argv: pointer to argument array
   *
-  * Return: void
+  * Return: Always 0
   */
 
 int main(int argc, char **argv)
 {
-	printf("%s\n", *argv);
+	if (argc > 0)
+		printf("%s\n", *argv);
 	return (0);
 }
