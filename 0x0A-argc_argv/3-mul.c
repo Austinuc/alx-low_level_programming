@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
   * main - prints the products of two input numbers
@@ -7,6 +8,19 @@
   *
   * Return: Always 0
   */
+
+int main(int argc, char *argv[])
+{
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	return (0);
+}
+
+/** Without the standard library functions *
 
 int main(int argc, char *argv[])
 {
@@ -21,13 +35,13 @@ int main(int argc, char *argv[])
 	}
 	while (i < 3)
 	{
-		p = argv[i]; /* get 1st argument */
-		if (*p == '-') /* check if argument is -ve */
+		p = argv[i]; \* get 1st argument *\
+		if (*p == '-') \* check if argument is -ve *\
 		{
 			n *= -1;
-			p++; /* go to next digit in the num string */
+			p++; \* go to next digit in the num string *\
 		}
-		while (*p != '\0') /*convert argument string to int */
+		while (*p != '\0') \*convert argument string to int *\
 		{
 			a += *p - 48;
 			a *= 10;
@@ -35,13 +49,13 @@ int main(int argc, char *argv[])
 		}
 		a /= 10;
 		i++;
-		p = argv[i]; /* get 2nd argument */
+		p = argv[i]; \* get 2nd argument *\
 		if (*p == '-')
 		{
 			n *= -1;
 			p++;
 		}
-		while (*p != '\0') /* convert argument str to int */
+		while (*p != '\0') \* convert argument str to int *\
 		{
 			b += *p - 48;
 			b *= 10;
@@ -53,3 +67,5 @@ int main(int argc, char *argv[])
 	printf("%d\n", a * b * n);
 	return (0);
 }
+
+*/
