@@ -16,3 +16,4 @@ File name | Description
 1-args.c | Prints the number of arguments passed into it from the command line
 2-args.c | Prints all argument it receives, one per line
 3-mul.c | Prints the product of two input numbers from the command line
+4-add.c | Adds two positive numbers and prints the result
