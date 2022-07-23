@@ -13,3 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
 0-create_array.c | Creates an array of chars, and initializes it with a specific char
+1-strdup.c | Copies a given string to a newly allocated memory space
