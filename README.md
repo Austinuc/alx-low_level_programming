@@ -24,3 +24,4 @@ Project Name | Description
  [0x08-recursion]() | To understand recursion and applications
  [0x09-static_libraries]() | Understanding static library, how to create it and how to use it
  [0x0A-argc_argv]() | Understanding how to use arguments passed to a function from the command line
+ [0x0B-malloc_free]() | Understanding malloc, free, and how to use them
