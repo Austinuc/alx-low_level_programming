@@ -16,3 +16,4 @@ File name | Description
 1-strdup.c | Copies a given string to a newly allocated memory space
 2-str_concat.c | Concatenates two string to a newly allocated space in memory
 3-alloc_grid.c | Creates a two dimensional array of integers using malloc
+4-free_grid.c | Frees a 2 dimensional grid allocated memory
