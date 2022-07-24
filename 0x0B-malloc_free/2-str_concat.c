@@ -25,7 +25,10 @@ char *str_concat(char *s1, char *s2)
 	new_string = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 
 	if (new_string == NULL)
+	{
+		free(new_string);
 		return (NULL);
+	}
 	while (i < len1)
 	{
 		*(new_string + j) = *(s1 + i);

@@ -11,18 +11,28 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **array_grid;
-	int i = 0, j = 0, *row;
+	int **array_grid = NULL;
+	int i = 0, j = 0;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
+	array_grid = malloc(sizeof(int) * height); /*create the rows*/
+	if (array_grid == NULL)
+	{
+		free(array_grid);
+		return (NULL);
+	}
 	for (; i < height; i++)
 	{
-		row = (int *)malloc(sizeof(int) * width);
-		if (row == NULL)
+		array_grid[i] = malloc(sizeof(int) * width); /* for cols*/
+		if (array_grid[i] == NULL)
+		{
+			free(array_grid[i]);
+			for (--i; i >= 0; i--)
+				free(array_grid[i]);
 			return (NULL);
-		*(array_grid + i) = row;
+		}
 	}
 	i = 0;
 	while (i < height)
