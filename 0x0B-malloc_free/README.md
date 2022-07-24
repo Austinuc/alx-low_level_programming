@@ -14,3 +14,4 @@ File name | Description
  --- | ---
 0-create_array.c | Creates an array of chars, and initializes it with a specific char
 1-strdup.c | Copies a given string to a newly allocated memory space
+2-str_concat.c | Concatenates two string to a newly allocated space in memory
