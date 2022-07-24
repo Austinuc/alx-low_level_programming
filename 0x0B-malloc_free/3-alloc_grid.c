@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
   * alloc_grid - Allocates memory space for a 2-D int array initialized with 0
@@ -11,7 +12,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **array_grid = NULL;
+	int **array_grid;
 	int i = 0, j = 0;
 
 	if (width <= 0 || height <= 0)
@@ -23,27 +24,23 @@ int **alloc_grid(int width, int height)
 		free(array_grid);
 		return (NULL);
 	}
-	for (; i < height; i++)
+	for (i = 0; i < height; i++)
 	{
 		array_grid[i] = malloc(sizeof(int) * width); /* for cols*/
 		if (array_grid[i] == NULL)
 		{
-			free(array_grid[i]);
-			for (--i; i >= 0; i--)
+			for (i--; i >= 0; i--)
 				free(array_grid[i]);
+			free(array_grid);
 			return (NULL);
 		}
 	}
-	i = 0;
-	while (i < height)
+	for (i = 0; i < height; i++)
 	{
-		j = 0;
-		while (j < width)
+		for (j = 0; j < width; j++)
 		{
 			array_grid[i][j] = 0;
-			j++;
 		}
-		i++;
 	}
 	return (array_grid);
 }
