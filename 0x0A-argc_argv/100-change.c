@@ -6,6 +6,7 @@
   * using 25, 10, 5, 2, and 1 as the coin values
   * @amount: the given amount
   * @change: min coins for change
+  * @i: count
   *
   * Return: change found
   */
