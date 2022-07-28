@@ -89,6 +89,7 @@ char *memalloc(int memspace)
 	}
 	return (result);
 }
+
 /**
   * initialize_zero - sets all the elements of an array to zero
   * @array: given array
@@ -120,15 +121,17 @@ char *initialize_zero(char *array, int len)
 
 int main(int argc, char *argv[])
 {
-	char *result, *add1;
+	char *result, *add1, *arg1, *arg2;
 	int i = 0, j = 0, len1, len2, memspace, carry = 0, temp = 0, k = 0;
 
-	if (argc != 3 || (argv[1][0] == 45) || (argv[2][0] == 45))
-	{
-		printf("Error\n");
-		exit(98);
-	}
-	len1 = len(argv[1]), len2 = len(argv[2]), memspace = len1 + len2;
+	if (argc != 3 || (*argv[1] == 45) || (*argv[2] == 45))
+		printf("Error\n"), exit(98);
+	arg1 = argv[1], arg2 = argv[2];
+	len1 = len(arg1), len2 = len(arg2), memspace = len1 + len2;
+	while (*arg1 == 48)
+		arg1++;
+	while (*arg2 == 48)
+		arg2++;
 	result = memalloc(memspace); /* alloc space for result */
 	add1 = memalloc(memspace); /*alloc space addition */
 	result = initialize_zero(result, memspace);
@@ -138,8 +141,8 @@ int main(int argc, char *argv[])
 		add1 = initialize_zero(add1, memspace);
 		for (i = 0; i < len1; i++)
 		{
-			temp = ((argv[1][len1 - 1 - i]) - 48) *
-				((argv[2][len2 - 1 - j] - 48)) + carry;
+			temp = ((arg1[len1 - 1 - i]) - 48) *
+				((arg2[len2 - 1 - j] - 48)) + carry;
 			/*always shift to left j times */
 			add1[memspace - 1 - i - j] = (temp % 10) + 48;
 			carry = temp / 10;
@@ -151,12 +154,10 @@ int main(int argc, char *argv[])
 	if (result[0] == 48)
 	{
 		while (k < (memspace - 1))
-		{
-			result[k] = result[k + 1];
-			k++;
-		}
+			result[k] = result[k + 1], k++;
 		result[k] = '\0';
 	}
 	printf("%s\n", result);
+	free(result);
 	return (0);
 }
