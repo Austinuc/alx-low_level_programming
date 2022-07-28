@@ -11,7 +11,6 @@
 int len(char *str)
 {
 	int i = 0;
-	char *err = "Error";
 
 	while (*(str + i) != '\0')
 	{
@@ -19,13 +18,7 @@ int len(char *str)
 			i++;
 		else
 		{
-			while (*err != '\0')
-			{
-				_putchar(*err);
-				err++;
-			}
-			_putchar('\n');
-
+			printstr("Error");
 			exit(98);
 		}
 	}
@@ -66,6 +59,23 @@ char *add(char *str1, char *str2, int len)
 }
 
 /**
+  * printstr - Prints string to stdout
+  * @str: input string;
+  *
+  * Return: void
+  */
+
+void printstr(char *str)
+{
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
+}
+
+/**
   * memalloc - Allocates memory spaces for pointer variable
   * @memspace: bytes of memory to allocate
   *
@@ -74,18 +84,13 @@ char *add(char *str1, char *str2, int len)
 
 char *memalloc(int memspace)
 {
-	char *result, *err = "Error";
+	char *result;
 
 	result = malloc(sizeof(char) * memspace);
 	if (result == NULL)
 	{
 		free(result);
-		while (*err != '\0')
-		{
-			_putchar(*err);
-			err++;
-		}
-		_putchar('\n');
+		printstr("Error");
 		exit(98);
 	}
 	return (result);
@@ -110,6 +115,27 @@ char *initialize_zero(char *array, int len)
 	return (array);
 }
 
+/**
+  * rmleadingzero - removes any leading zero digit if any in the result
+  * @result: given number string
+  * @strlen: length of result string
+  * @i: count variable
+  *
+  * Method: shifts all elements of the result to the left & terminating
+  *         last element with a NULL value recursively.
+  * Return: return result with no leading zero
+  */
+
+char *rmleadingzero(char *result, int strlen, int i)
+{
+	if (i == (strlen - 1))
+	{
+		result[i] = '\0';
+		return (result);
+	}
+	result[i] = result[i + 1];
+	rmleadingzero(result, strlen, i + 1);
+}
 
 /**
   * main - Entry point
@@ -122,11 +148,11 @@ char *initialize_zero(char *array, int len)
 int main(int argc, char *argv[])
 {
 	char *result, *add1;
-	int i = 0, j = 0, len1, len2, memspace, carry = 0, temp = 0, k = 0;
+	int i = 0, j = 0, len1, len2, memspace, carry = 0, temp = 0;
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printstr("Error");
 		exit(98);
 	}
 	len1 = len(argv[1]);
@@ -138,6 +164,7 @@ int main(int argc, char *argv[])
 	for (j = 0; j < len2; j++) /* start multiplication */
 	{ /*multiply all elements in argv[1] with argv[2][j] */
 		i = 0, carry = 0;
+		/* initialize values from multiplication */
 		add1 = initialize_zero(add1, memspace);
 		for (i = 0; i < len1; i++)
 		{
@@ -148,17 +175,11 @@ int main(int argc, char *argv[])
 			carry = temp / 10;
 		} /*add carry to next digit by the left */
 		add1[memspace - 1 - i - j] = carry + 48;
+		/* add multiplication values to final result */
 		result = add(result, add1, memspace);
 	} /* remove leading zero if any from result */
 	if (result[0] == 48)
-	{
-		while (k < (memspace - 1))
-		{
-			result[k] = result[k + 1];
-			k++;
-		}
-		result[k] = '\0';
-	}
-	printf("%s\n", result);
+		result = rmleadingzero(result, memspace, 0);
+	printstr(result);
 	return (0);
 }
