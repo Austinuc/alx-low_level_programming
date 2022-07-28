@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-  * len - length of string
+  * len - finds length of string and checks if any argument is zero or NAN
   * @str: input string
   *
   * Return: string length
@@ -11,7 +11,17 @@
 int len(char *str)
 {
 	int i = 0;
-	char *err = "Error";
+
+	if (*str == 48)
+	{
+		while (*str == 48)
+			str++;
+		if (*str == '\0')
+		{
+			printf("0\n");
+			exit(0);
+		}
+	}
 
 	while (*(str + i) != '\0')
 	{
@@ -19,13 +29,7 @@ int len(char *str)
 			i++;
 		else
 		{
-			while (*err != '\0')
-			{
-				_putchar(*err);
-				err++;
-			}
-			_putchar('\n');
-
+			printf("Error\n");
 			exit(98);
 		}
 	}
@@ -74,18 +78,13 @@ char *add(char *str1, char *str2, int len)
 
 char *memalloc(int memspace)
 {
-	char *result, *err = "Error";
+	char *result;
 
 	result = malloc(sizeof(char) * memspace);
 	if (result == NULL)
 	{
 		free(result);
-		while (*err != '\0')
-		{
-			_putchar(*err);
-			err++;
-		}
-		_putchar('\n');
+		printf("Error\n");
 		exit(98);
 	}
 	return (result);
@@ -124,14 +123,12 @@ int main(int argc, char *argv[])
 	char *result, *add1;
 	int i = 0, j = 0, len1, len2, memspace, carry = 0, temp = 0, k = 0;
 
-	if (argc != 3)
+	if (argc != 3 || (argv[1][0] == 45) || (argv[2][0] == 45))
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	len1 = len(argv[1]);
-	len2 = len(argv[2]);
-	memspace = len1 + len2;
+	len1 = len(argv[1]), len2 = len(argv[2]), memspace = len1 + len2;
 	result = memalloc(memspace); /* alloc space for result */
 	add1 = memalloc(memspace); /*alloc space addition */
 	result = initialize_zero(result, memspace);
@@ -150,6 +147,7 @@ int main(int argc, char *argv[])
 		add1[memspace - 1 - i - j] = carry + 48;
 		result = add(result, add1, memspace);
 	} /* remove leading zero if any from result */
+	free(add1);
 	if (result[0] == 48)
 	{
 		while (k < (memspace - 1))
