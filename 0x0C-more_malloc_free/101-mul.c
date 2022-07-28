@@ -18,7 +18,7 @@ int len(char *str)
 			i++;
 		else
 		{
-			printf("Error\n");
+			printstr("Error");
 			exit(98);
 		}
 	}
@@ -59,6 +59,23 @@ char *add(char *str1, char *str2, int len)
 }
 
 /**
+  * printstr - Prints string to stdout
+  * @str: input string;
+  *
+  * Return: void
+  */
+
+void printstr(char *str)
+{
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
+}
+
+/**
   * memalloc - Allocates memory spaces for pointer variable
   * @memspace: bytes of memory to allocate
   *
@@ -73,7 +90,7 @@ char *memalloc(int memspace)
 	if (result == NULL)
 	{
 		free(result);
-		printf("Error\n");
+		printstr("Error");
 		exit(98);
 	}
 	return (result);
@@ -135,7 +152,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printstr("Error");
 		exit(98);
 	}
 	len1 = len(argv[1]);
@@ -159,10 +176,10 @@ int main(int argc, char *argv[])
 		} /*add carry to next digit by the left */
 		add1[memspace - 1 - i - j] = carry + 48;
 		/* add multiplication values to final result */
-		result = add(result, add1, (memspace));
+		result = add(result, add1, memspace);
 	} /* remove leading zero if any from result */
 	if (result[0] == 48)
 		result = rmleadingzero(result, memspace, 0);
-	printf("%s\n", result);
+	printstr(result);
 	return (0);
 }

@@ -30,7 +30,7 @@ char **strtow(char *str)
 		return (NULL);
 	/* allocate mem space for each word & extra space of last NULL elem */
 
-	str_split = malloc((count + 1) * sizeof(char));
+	str_split = malloc((count + 1) * sizeof(char *));
 	if (str_split == NULL)
 	{
 		free(str_split);
@@ -51,7 +51,7 @@ char **strtow(char *str)
 				j++;
 				str++;
 			}
-			str_split[i] = malloc((j + 1) * sizeof(char));
+			str_split[i] = malloc((j + 2) * sizeof(char));
 			if (str_split[i] == NULL)
 			{
 				k = 0;

@@ -12,6 +12,8 @@ int len(char *str);
 char *initialize_zero(char *array, int len);
 char *mul(char argc, char *argv[]);
 char *rmleadingzero(char *result, int strlen, int i);
+void printstr(char *str);
+int _putchar(char);
 
 
 #endif /* main.h */
