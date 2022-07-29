@@ -150,16 +150,15 @@ int main(int argc, char *argv[])
 		add1[memspace - 1 - i - j] = carry + 48;
 		result = add(result, add1, memspace);
 	} /* remove leading zero if any from result */
-	free(add1);
 	while (result[0] == 48)
 	{
 		k = 0;
 		while (k < (memspace - 1))
 			result[k] = result[k + 1], k++;
-		result[k] = '\0';
-		memspace--;
+		result[k] = '\0', memspace--;
 	}
 	printf("%s\n", result);
+	free(add1);
 	free(result);
 	return (0);
 }
