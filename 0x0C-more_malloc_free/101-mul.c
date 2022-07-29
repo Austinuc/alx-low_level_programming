@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
 	if (argc != 3 || (*argv[1] == 45) || (*argv[2] == 45))
 		printf("Error\n"), exit(98);
 	arg1 = argv[1], arg2 = argv[2];
-	len1 = len(arg1), len2 = len(arg2), memspace = len1 + len2;
+	len1 = len(arg1), len2 = len(arg2), memspace = len1 + len2 + 1;
 	while (*arg1 == 48)
 		arg1++;
 	while (*arg2 == 48)
@@ -151,11 +151,13 @@ int main(int argc, char *argv[])
 		result = add(result, add1, memspace);
 	} /* remove leading zero if any from result */
 	free(add1);
-	if (result[0] == 48)
+	while (result[0] == 48)
 	{
+		k = 0;
 		while (k < (memspace - 1))
 			result[k] = result[k + 1], k++;
 		result[k] = '\0';
+		memspace--;
 	}
 	printf("%s\n", result);
 	free(result);
