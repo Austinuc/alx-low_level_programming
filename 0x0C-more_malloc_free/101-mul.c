@@ -48,25 +48,17 @@ int len(char *str)
 char *add(char *str1, char *str2, int len)
 {
 	int carry = 0, i = 0, temp = 0;
-	char *result;
 
-	result = memalloc(len);
-	result = initialize_zero(result, len);
-	while (i < len)
-	{
-		result[i] = 48;
-		i++;
-	}
-	i = 0, len--;
+	len--;
 	for (i = 0; i <= len; i++)
 	{
 		temp = (str1[len - i] - 48) + (str2[len - i] - 48) + carry;
-		result[len - i] = (temp % 10) + 48;
+		str1[len - i] = (temp % 10) + 48;
 		carry = (temp / 10);
 	}
 	if (carry)
-		result[len - i] = carry + 48;
-	return (result);
+		str1[len - i] = carry + 48;
+	return (str1);
 }
 
 /**
