@@ -14,3 +14,4 @@ File name | Description
  --- | ---
 dog.h | Defines a structure type of dog
 1-init_dog.c | Initializes the paramemters of the dog structure
+2-print_dog.c | Prints out a dog structure properties
