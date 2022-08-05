@@ -13,3 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
 dog.h | Defines a structure type of dog
+1-init_dog.c | Initializes the paramemters of the dog structure
