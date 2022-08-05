@@ -15,3 +15,4 @@ File name | Description
 0-print_name.c | Prints a name
 1-array_iterator.c | Executes a function given as a parameter on each element of an array
 2-int_index.c | Searches for an integer using a function pointer
+3-main.c, 3-op_functions.c, 3-get_op_func.c, 3-calc.h | Performs simple calculations by taking input from the command line
