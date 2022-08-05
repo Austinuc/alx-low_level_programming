@@ -17,3 +17,4 @@ dog.h | Defines a structure type of dog
 2-print_dog.c | Prints out a dog structure properties
 dog.h | Added a typedef for struct dog
 4-new_dog.c | Creates a new dog from struct dog
+5-free_dog.c | Frees the memory occupied by the dog struct
