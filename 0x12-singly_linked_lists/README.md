@@ -16,3 +16,4 @@ File name | Description
 1-list_len.c | Prints Returns the number of elements in a linked list
 2-add_node.c | Adds a new node at the begginning of a list
 3-add_node_end.c | Adds a new node at the end of a list
+4-free_list.c | Frees a given list
