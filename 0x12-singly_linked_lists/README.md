@@ -17,3 +17,4 @@ File name | Description
 2-add_node.c | Adds a new node at the begginning of a list
 3-add_node_end.c | Adds a new node at the end of a list
 4-free_list.c | Frees a given list
+100-first.c | Function executes before the main function
