@@ -13,3 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
 0-print_list.c | Prints all the elements of a list
+1-list_len.c | Prints Returns the number of elements in a linked list
