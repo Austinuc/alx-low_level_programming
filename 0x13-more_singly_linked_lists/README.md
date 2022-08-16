@@ -18,3 +18,8 @@ File name | Description
 3-add_nodeint_end.c | Adds a node at the end of a list
 4-free_listint.c | Frees a singly linked list
 5-free_listint2.c | Frees a singly linked list and sets the head to NULL
+6-pop_listint.c | Deletes the head node of a linked list and returns the head node's data (n)
+7-get_nodeint.c | Returns the nth node of a linked list
+8-sum_listint.c | Returns the sum of all the data (n) of a linked list
+9-insert_nodeint.c | Inserts a new node at a given position in a linked list
+10-delete_nodeint.c | Deletes a node at a given index of a linked list
