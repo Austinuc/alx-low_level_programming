@@ -11,25 +11,15 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *left, *right;
 
-	if (*head)
-	{
-		left = NULL;
-		right = *head;
-		*head = (*head)->next;
-		right->next = left;
-	}
+	left = NULL;
+	right = NULL;
 	while (*head)
 	{
 		left = right;
 		right = *head;
-		if ((*head)->next)
-			*head = (*head)->next;
-		else
-		{
-			right->next = left;
-			break;
-		}
+		*head = (*head)->next;
 		right->next = left;
 	}
+	*head = right;
 	return (*head);
 }

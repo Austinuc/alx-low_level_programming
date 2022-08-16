@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-  * print_listint_safe - Prints list with possible loop(s)
+  * print_listint_safe - Prints list with possible loop
   * @head: pointer to first node
   *
   * Method: Point every traversed node to NULL leaving its value
@@ -21,7 +21,7 @@ size_t print_listint_safe(const listint_t *head)
 			printf("-> [%p] %d\n", (void *)&head, head->n);
 			break;
 		}
-		printf("[%p] %d\n", (void *)&head, head->n);
+		printf("[%p] %d\n", (void *)&head->n, head->n);
 		num++;
 		ptr = (void *)head;
 		head = head->next;
