@@ -18,10 +18,11 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		if (head->next == NULL && head->n)
 		{
-			printf("-> [%p] %d\n", (void *)&head, head->n);
+			printf("-> [%p] %d\n", (void *)&(head->n), head->n);
+			num++;
 			break;
 		}
-		printf("[%p] %d\n", (void *)&head->n, head->n);
+		printf("[%p] %d\n", (void *)&(head->n), head->n);
 		num++;
 		ptr = (void *)head;
 		head = head->next;
