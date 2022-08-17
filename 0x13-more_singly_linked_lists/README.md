@@ -25,3 +25,4 @@ File name | Description
 10-delete_nodeint.c | Deletes a node at a given index of a linked list
 100-reverse_listint.c | Reverses a linked list
 101-print_listint_safe.c | Prints a linked list taking any possible loop into consideration
+102-free_listint_safe.c | Frees a list with or without a loop
