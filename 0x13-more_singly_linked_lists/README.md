@@ -26,3 +26,4 @@ File name | Description
 100-reverse_listint.c | Reverses a linked list
 101-print_listint_safe.c | Prints a linked list taking any possible loop into consideration
 102-free_listint_safe.c | Frees a list with or without a loop
+103-find_loop.c | Finds a loop in a list
