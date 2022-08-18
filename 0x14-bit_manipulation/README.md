@@ -17,3 +17,4 @@ File name | Description
 2-get_bit.c | REturns the value of a bit at a given index
 3-set_bit.c | Sets the value of a bit at a given index
 4-clear_bit.c | Unsets or clears the bit value at a given index
+5-flip_bits.c | Returns number of bits to be flipped to get a number from another number
