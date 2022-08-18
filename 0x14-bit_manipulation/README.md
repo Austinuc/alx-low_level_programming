@@ -16,3 +16,4 @@ File name | Description
 1-print_binary.c | Prints the binary value of a given number
 2-get_bit.c | REturns the value of a bit at a given index
 3-set_bit.c | Sets the value of a bit at a given index
+4-clear_bit.c | Unsets or clears the bit value at a given index
