@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 		if (j == i - 1)
 			pow = 1;
 		else
-			pow *= 2;
+			pow <<= 1;
 		if (*(b + j) == '1')
 			num += pow;
 	}
