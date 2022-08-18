@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdbool.h>
 
 /**
   * get_bit - Gets the value of a bit at a given index
@@ -11,14 +10,13 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i = -1;
-	bool bit;
+	int i = -1, bit;
 	if (n == 0 && index < 64)
 		i = 0;
-	if (n)
+	if (n && index < 64)
 	{
 		bit = n & (1 << index);
-		i = bit;
+		i = 1 && bit;
 	}
 	return (i);
 }
