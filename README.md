@@ -26,8 +26,9 @@ Project Name | Description
  [0x0A-argc_argv]() | Understanding how to use arguments passed to a function from the command line
  [0x0B-malloc_free]() | Understanding malloc, free, and how to use them
  [0x0C-more_malloc_free]() | Indept use of malloc and free
- [0x0D-preprocessor]() Understanding the use of macro
- [0x0E-structures_typedef]() The use of Structures and Typedef in C
- [0x0F. C - Function pointers]() Function pointers and their applications
- [0x12-singly_linked_lists]() How to build and use link list
- [0x13-more_singly_linked_lists]() More on singly linked lists
+ [0x0D-preprocessor]() | Understanding the use of macro
+ [0x0E-structures_typedef]() | The use of Structures and Typedef in C
+ [0x0F. C - Function pointers]() | Function pointers and their applications
+ [0x12-singly_linked_lists]() | How to build and use link list
+ [0x13-more_singly_linked_lists]() | More on singly linked lists
+[0x14-bit_manipulation]() | How to manipulate bits and bitwise operators
