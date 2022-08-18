@@ -15,3 +15,4 @@ File name | Description
 0-binary_to_uint.c | Converts a binary to an unsigned int
 1-print_binary.c | Prints the binary value of a given number
 2-get_bit.c | REturns the value of a bit at a given index
+3-set_bit.c | Sets the value of a bit at a given index
