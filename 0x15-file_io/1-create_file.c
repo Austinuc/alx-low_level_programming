@@ -14,6 +14,8 @@ int create_file(const char *filename, char *text_content)
 	size_t strlen = 0;
 	ssize_t nwrite;
 
+	if (!text_content)
+		text_content = "";
 	while (*(text_content + strlen) != '\0')
 		strlen++;
 	if (!(filename))
@@ -23,8 +25,8 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 	nwrite = write(fd, text_content, strlen);
+	close(fd);
 	if (nwrite == -1 || (size_t)nwrite < strlen)
 		return (-1);
-	close(fd);
 	return (1);
 }
