@@ -13,3 +13,4 @@ The following are written in C language
 File name | Description
  --- | ---
 0-read_textfile.c | Reads a text file and prints it to the POSIX standard output
+1-create_file.c | Creates a file if not already existing and writes to the file
