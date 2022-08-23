@@ -35,21 +35,21 @@ void error_check(int fd_fr, int fd_to, char *argv[])
 
 int main(int argc, char *argv[])
 {
-	int fd_fr, fd_to, ncp = 1;
+	int fd_fr, fd_to, ncp = 1024;
 	char buff[1024];
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
 
 	fd_fr = open(argv[1], O_RDONLY);
-	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 00664);
+	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 
 	error_check(fd_fr, fd_to, argv);
 
-	while (ncp != 0)
+	while (ncp == 1024)
 	{
 		ncp = read(fd_fr, buff, 1024);
 		if (ncp == -1)
