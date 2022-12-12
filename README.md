@@ -33,3 +33,4 @@ Project Name | Description
  [0x13-more_singly_linked_lists](https://github.com/Austinuc/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists) | More on singly linked lists
 [0x14-bit_manipulation](https://github.com/Austinuc/alx-low_level_programming/tree/master/0x14-bit_manipulation) | How to manipulate bits and bitwise operators
 [0x15. C - File I/O]() How to open, close, read and write to files. understanding  I/O system calls, file permisions
+[0x1C. C - Makefiles]() Using Makefiles
